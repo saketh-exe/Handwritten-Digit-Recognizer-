@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digit Recognizer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+  
+    }
+    canvas {
+      border: 1px solid black;
+      cursor: crosshair;
+    }
+    #feedback{
+      display: none;
+    }
+    #subs{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Draw a Digit</h1>
+  <canvas id="canvas" width="280" height="280"></canvas>
+  <br><br>
+  <button id="clr">Clear</button>
+  <button id="pred" type="button">Predict</button>
+  <h2 id="result"></h2>
+  <div id="feedback">
+    <button id="right">right!!</button>
+
+    <button id="wrong">wrong ?</button>
+    
+  </div>
+  <div id="subs">
+    
+    <input type="number" min="0" max="9" id="feedbox">
+    <button id="sub">submit</button>
+  </div>
+  
+
+</body>
+  <script src="index.js">
+    
+  </script>
+</html>
